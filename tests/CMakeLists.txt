@@ -13,3 +13,6 @@ cpd_test(version)
 if(WITH_FGT)
     cpd_test(gauss_transform_fgt)
 endif()
+
+add_executable(benchmark benchmark.cpp)
+target_link_libraries(benchmark PRIVATE Library-C++)
